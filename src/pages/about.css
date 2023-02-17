@@ -1,0 +1,16 @@
+.background-image {
+    background-image: url('../../public/logoakrom.png');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: -1;
+    background-position: 50% 50%;
+    transition: background-position 0.5s ease;
+  }
+  
+  .background-image:hover {
+    background-position: 50% 40%;
+  }
+  
