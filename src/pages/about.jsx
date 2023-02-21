@@ -1,11 +1,9 @@
 import React from 'react'
 import HorizontalPanel from '../components/horizontalPanel';
-import './about.css';
 
 const About = () => {
   return (
-    <div className='background-image' style={{ backgroundColor: '#00133a' }}>
-         
+    <div>
         <div>
           <h2> About Us </h2>
           <p>
