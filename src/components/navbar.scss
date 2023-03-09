@@ -1,0 +1,56 @@
+.logo {
+  float: left;
+  img {
+    height: 30px;
+    width: auto;
+  }
+}
+
+.links {
+  float: right;
+}
+
+nav {
+  background-color: #00133a;
+  /*overflow: hidden;*/
+  position: fixed;
+  width: 100%;
+  padding: 10px;
+  top: 0;
+  left: 0;
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    float: right;
+  }
+  li {
+    float: right;
+  }
+  a {
+    display: block;
+    color: white;
+    text-align: center;
+    margin: 0 25px;
+    padding: 25px 0;
+    text-decoration: none;
+    transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+    &::before {
+      background-color: transparent;
+      content: '';
+      transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+    }
+    &.active {
+      position: relative;
+
+      &::before {
+        height: 3px;
+        width: 100%;
+        position: absolute;
+        bottom: 10%;
+        background-color: white;
+      }
+    }
+  }
+}
